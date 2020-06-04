@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Masonry JS</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="heading">
+                <h1>Masonry JS</h1>
+            </div>
+
+            <h2>Percentage Width</h2>
+            <div class="grid-one">
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo, sed officia et delectus pariatur sit laudantium officiis, ea dolore facere sint deserunt, nobis fugit animi impedit reprehenderit.</p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo, sed officia et delectus pariatur sit laudantium officiis, ea dolore facere sint deserunt, nobis fugit animi impedit.</p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo, sed officia et delectus pariatur sit laudantium ea </p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo,</p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit ametametamet, </p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla </p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo, sed officia et delectus pariatur sit laudantium officiis, ea dolore facere sint deserunt.</p>
+                </div>
+            </div>
+
+            <h2>Fixed Width</h2>
+            <div class="grid-two">
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo, sed officia et delectus pariatur sit laudantium officiis, ea dolore facere sint deserunt, nobis fugit animi impedit reprehenderit.</p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo, sed officia et delectus pariatur sit laudantium officiis, ea dolore facere sint deserunt, nobis fugit animi impedit.</p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo, sed officia et delectus pariatur sit laudantium ea </p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo,</p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit ametametamet, </p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla </p>
+                </div>
+                <div class="grid-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ducimus hic nemo, sed officia et delectus pariatur sit laudantium officiis, ea dolore facere sint deserunt.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script type="text/javascript">
+
+        var msnry_percent = new Masonry('.grid-one', {
+            // Select Div
+            itemSelector: '.grid-item',
+            // Width of div
+            columnWidth: '.grid-item',
+            gutter: 10,
+            percentPosition: true
+        });
+
+        var msnry_fixed = new Masonry('.grid-two', {
+            // Select Div
+            itemSelector: '.grid-item',
+            // Width of div
+            columnWidth: '.grid-item',
+            gutter: 10,
+            percentPosition: true
+        });
+    </script>
+</body>
+</html>
